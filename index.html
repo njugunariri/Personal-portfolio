@@ -3,111 +3,478 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <meta name="description" content="Rihanna Njuguna - Software Engineer Portfolio">
+    <meta name="keywords" content="software engineer, web development, UI/UX design">
+    <meta property="og:title" content="Rihanna Njuguna - Portfolio">
+    <meta property="og:description" content="Software Engineer Portfolio">
+    
+    <title>Rihanna Njuguna | Software Engineer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header Section -->
-    <div id="header">
+    <header>
         <div class="container">
             <nav>
-                <img src="Images/letter-r_13038149.png" class="logo">
+                <img src="Images/letter-r_13038149.png" class="logo" alt="Logo">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <ul>
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <button id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
             </nav>
-            <div class="header-text">
-                <p>Software Engineer</p>
-                <h1>Hi, I'm <span>Rihanna Njuguna</span>.</h1>
+            <div class="header-text fade-in">
+                <p>Full Stack Developer & UI/UX Enthusiast</p>
+                <h1>Hi, I'm <span>Rihanna Njuguna</span></h1>
+                <p class="typing-text"></p>
+                <div class="social-links">
+                    <a href="https://github.com/yourusername" target="_blank" title="Check out my code"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/Rihanna-Njuguna" target="_blank" title="Connect with me"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:rihanna8njuguna@gmail.com" title="Email me"><i class="fas fa-envelope"></i></a>
+                </div>
             </div>
         </div>
-    </div>
+    </header>
 
-    <!-- About Section -->
-    <div id="about">
-        <div class="container">
-            <div class="section-title">About Me</div>
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="Images/2.jpeg" alt="Rihanna Njuguna">
-                </div>
-                <div class="about-col-2">
-                    <div class="text">Who I Am</div>
-                    <p>Hello! I'm Rihanna Njuguna, a passionate Software Engineer dedicated to crafting elegant solutions 
-                        to complex challenges. With expertise in modern technologies and an eye for detail, I create user-centric
-                        designs and robust functionalities. My mission is to bring ideas to life and deliver impactful experiences.</p>
-                    <a href="#contact" class="btn">Get in Touch</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    <main>
+        <!-- About Section -->
+        <section id="about" class="section-padding">
+            <div class="container">
+                <div class="section-title">About Me</div>
+                <div class="about-container">
+                    <div class="about-col-1">
+                        <div class="image-card">
+                            <img src="Images/2.jpeg" alt="Rihanna Njuguna" loading="lazy">
+                            <div class="image-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="about-col-2">
+                        <div class="about-content">
+                            <h2 class="gradient-text">Crafting Digital Experiences</h2>
+                            <p>As a Full Stack Developer with a passion for clean code and intuitive design, I transform complex problems into elegant solutions. My journey in tech is driven by the endless possibilities of creating impactful digital experiences that make a difference.</p>
+                            
+                            <div class="key-points">
+                                <div class="point">
+                                    <i class="fas fa-code"></i>
+                                    <span>Modern Web Apps</span>
+                                </div>
+                                <div class="point">
+                                    <i class="fas fa-database"></i>
+                                    <span>Backend Architecture</span>
+                                </div>
+                                <div class="point">
+                                    <i class="fas fa-palette"></i>
+                                    <span>Creative UI/UX</span>
+                                </div>
+                                <div class="point">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <span>Responsive Design</span>
+                                </div>
+                            </div>
 
-    <!-- Services Section -->
-    <div id="services">
-        <div class="container">
-            <div class="section-title">Services</div>
-            <div class="row">
-                <div class="service-box">
-                    <h3>Web Development</h3>
-                    <p>Building responsive and visually appealing websites tailored to your needs.</p>
-                </div>
-                <div class="service-box">
-                    <h3>UI/UX Design</h3>
-                    <p>Designing user-friendly and intuitive interfaces for an optimal user experience.</p>
-                </div>
-                <div class="service-box">
-                    <h3>Consultation</h3>
-                    <p>Offering expert advice to elevate your digital presence and branding.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+                            <div class="tech-stack">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
 
-    <!-- Portfolio Section -->
-    <div id="portfolio">
-        <div class="container">
-            <div class="section-title">Portfolio</div>
-            <div class="row">
-                <div class="portfolio-item">
-                    <h3>Travel learning project</h3>
-                    <p>A travel planning app is a platform that allows users to plan and share their itineraries.
-                        It's a one-stop-shop for organizing travel plans.</p>
-                </div>
-                <div class="portfolio-item">
-                 
-                    <h3>Online learning platform</h3>
-                    <p>An intuitive and modern online learning platform where users can enroll in courses, track their progress, and participate in discussions. 
-                        This project leverages the power of Flask for the backend and React with Vite for a fast and responsive frontend experience</p>
-                </div>
-                <div class="portfolio-item">
-                    <h3>Beta hits</h3>
-                    <p>Our music app is an immersive platform designed to elevate your listening experince. 
-                        With a sleek interface and intuitive navigation,it provides seamless access to vast of library of song.</p>
+                            <div class="about-buttons">
+                                <a href="#contact" class="btn primary-btn">
+                                    <span>Let's Build Something</span>
+                                    <i class="fas fa-rocket"></i>
+                                </a>
+                                <a href="path-to-your-cv.pdf" class="btn secondary-btn" download>
+                                    <span>View Resume</span>
+                                    <i class="fas fa-file-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <!-- Contact Section -->
-    <div id="contact">
-        <div class="container">
-            <div class="section-title">Contact Me</div>
-            <div class="contact-info">
-                <p><strong>Email:</strong> <a href="mailto:rihanna8njuguna@gmail.com">rihanna8njuguna@gmail.com</a></p>
-                <p><strong>Phone:</strong> <a href="tel:+254745322682">+254 745 322 682</a></p>
-                <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/Rihanna-Njuguna" target="_blank">Rihanna Njuguna</a></p>
+        <!-- Skills Section -->
+        <section id="skills" class="section-padding">
+            <div class="container">
+                <div class="section-title">Tech Arsenal</div>
+                <p class="section-subtitle">Crafting digital solutions with these powerful tools</p>
+                
+                <div class="skills-container">
+                    <!-- Frontend Skills -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-laptop-code"></i>
+                            <h3>Frontend Wizardry</h3>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <i class="fab fa-react"></i>
+                                <h4>React</h4>
+                                <p>Building interactive UIs with modern React and its ecosystem</p>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fab fa-js"></i>
+                                <h4>JavaScript</h4>
+                                <p>ES6+ expertise with a dash of TypeScript magic</p>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fab fa-html5"></i>
+                                <h4>HTML5/CSS3</h4>
+                                <p>Crafting responsive and accessible web experiences</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend Skills -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-server"></i>
+                            <h3>Backend Mastery</h3>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <i class="fab fa-node-js"></i>
+                                <h4>Node.js</h4>
+                                <p>Server-side solutions with Express and Node.js</p>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fas fa-database"></i>
+                                <h4>Databases</h4>
+                                <p>MongoDB, PostgreSQL, and data modeling expertise</p>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fab fa-python"></i>
+                                <h4>Python</h4>
+                                <p>Django & Flask for robust backend systems</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Others -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-tools"></i>
+                            <h3>Dev Tools & More</h3>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <i class="fab fa-git-alt"></i>
+                                <h4>Version Control</h4>
+                                <p>Git wizardry and collaboration workflows</p>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fas fa-cloud"></i>
+                                <h4>Cloud Services</h4>
+                                <p>AWS & Firebase deployment expertise</p>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fas fa-terminal"></i>
+                                <h4>CLI & DevOps</h4>
+                                <p>Automation and deployment pipelines</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <a href="mailto:rihanna8njuguna@gmail.com" class="contact-button">Get in Touch</a>
-        </div>
-    </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section-padding">
+            <div class="container">
+                <div class="section-title">What I Offer</div>
+                <p class="section-subtitle">Transforming ideas into digital reality</p>
+                
+                <div class="services-grid">
+                    <!-- Web Development -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Full Stack Development</h3>
+                        <p>Crafting scalable web applications with modern technologies and best practices.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Custom Web Applications</li>
+                            <li><i class="fas fa-check-circle"></i> RESTful APIs</li>
+                            <li><i class="fas fa-check-circle"></i> Database Architecture</li>
+                        </ul>
+                        <a href="#contact" class="service-cta">
+                            Start Project
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <!-- UI/UX Design -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>UI/UX Design</h3>
+                        <p>Creating intuitive and engaging user experiences that delight and convert.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> User Interface Design</li>
+                            <li><i class="fas fa-check-circle"></i> Responsive Layouts</li>
+                            <li><i class="fas fa-check-circle"></i> Interactive Prototypes</li>
+                        </ul>
+                        <a href="#contact" class="service-cta">
+                            Design Together
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <!-- Technical Consultation -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Tech Consultation</h3>
+                        <p>Strategic guidance to help you make informed technical decisions.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Architecture Planning</li>
+                            <li><i class="fas fa-check-circle"></i> Tech Stack Selection</li>
+                            <li><i class="fas fa-check-circle"></i> Performance Optimization</li>
+                        </ul>
+                        <a href="#contact" class="service-cta">
+                            Get Advice
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section-padding">
+            <div class="container">
+                <div class="section-title">Featured Projects</div>
+                <p class="section-subtitle">Turning complex challenges into elegant solutions</p>
+
+                <div class="portfolio-grid">
+                    <!-- Travel Learning Project -->
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="Images/travel-project.jpg" alt="Travel Learning Project" loading="lazy">
+                            <div class="portfolio-overlay"></div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Wanderlust Explorer</h3>
+                            <p>A modern travel planning platform that transforms how adventurers plan and share their journeys. Built with React and Node.js, featuring real-time collaboration and interactive maps.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">MapBox API</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-btn" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                                <a href="#" class="portfolio-btn" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Learning Platform -->
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="Images/learning-platform.jpg" alt="Learning Platform" loading="lazy">
+                            <div class="portfolio-overlay"></div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>EduTech Hub</h3>
+                            <p>An intuitive learning platform that revolutionizes online education. Features include interactive courses, real-time progress tracking, and AI-powered learning recommendations.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Flask</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">AWS</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-btn" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                                <a href="#" class="portfolio-btn" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Music App -->
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="Images/music-app.jpg" alt="Beta Hits Music App" loading="lazy">
+                            <div class="portfolio-overlay"></div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Beta Hits</h3>
+                            <p>A next-gen music streaming platform that delivers an immersive audio experience. Features include personalized playlists, social sharing, and high-fidelity audio streaming.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Redis</span>
+                                <span class="tech-tag">WebAudio API</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-btn" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                                <a href="#" class="portfolio-btn" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-padding">
+            <div class="container">
+                <div class="section-title">Let's Connect</div>
+                <p class="section-subtitle">Ready to bring your ideas tolife? Let's make it happen!</p>
+
+                <div class="contact-container">
+                    <!-- Contact Info Cards -->
+                    <div class="contact-info-grid">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Email</h3>
+                            <a href="mailto:rihanna8njuguna@gmail.com" class="contact-link">
+                                rihanna8njuguna@gmail.com
+                            </a>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h3>Phone</h3>
+                            <a href="tel:+254745322682"class="contact-link">
+                                +254 745 322 682
+                            </a>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <h3>LinkedIn</h3>
+                            <a href="https://linkedin.com/in/Rihanna-Njuguna" target="_blank" class="contact-link">
+                                Rihanna Njuguna
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Call to Action -->
+                    <div class="contact-cta">
+                        <div class="cta-card">
+                            <h2>Start a Project</h2>
+                            <p>Have an exciting project in mind? Let's collaborateand build something amazing together.</p>
+                            <a href="mailto:rihanna8njuguna@gmail.com" class="cta-button">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer Section -->
-    <footer>
-        <p>© 2024 Rihanna Njuguna. All Rights Reserved.</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand Section -->
+                <div class="footer-brand">
+                    <img src="Images/letter-r_13038149.png" class="footer-logo" alt="Logo">
+                    <p class="footer-tagline">Crafting digital experiences with code and creativity</p>
+                    <div class="social-links">
+                        <a href="https://github.com/yourusername" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/Rihanna-Njuguna" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/yourusername" target="_blank" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:rihanna8njuguna@gmail.com" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:rihanna8njuguna@gmail.com">rihanna8njuguna@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+254745322682">+254 745 322 682</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Nairobi, Kenya</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2024 Rihanna Njuguna. All rights reserved.</p>
+                </div>
+                <div class="footer-extra">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
